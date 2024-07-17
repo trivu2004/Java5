@@ -1,0 +1,18 @@
+1. tạo tên db trong sqlserver
+masv_hoten_asm_java5
+2. 
+spring.jpa.hibernate.ddl-auto=create 
+--lúc đầu chưa có database thì chọn create-drop 
+3. 
+-- sau khi run tự động sinh db rồi thi sửa lại là none
+spring.jpa.hibernate.ddl-auto=none
+
+
+
+
+use master
+go
+drop database masv_hoten_asm_java5
+go
+create database masv_hoten_asm_java5
+go

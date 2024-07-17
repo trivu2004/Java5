@@ -1,0 +1,51 @@
+.timeline-breaker {
+    position: relative;
+    padding: 10px;
+    /* Tuỳ chỉnh padding theo ý bạn */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng hover màu nền */
+}
+
+.timeline-breaker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -1px;
+    /* Độ dày của đường line */
+    width: 50px;
+    /* Độ dài của đường line */
+    height: 2px;
+    /* Độ dày của đường line */
+    background-color: #000;
+    /* Màu của đường line */
+    transition: width 0.3s ease;
+    /* Hiệu ứng mở rộng khi hover */
+}
+
+.timeline-breaker:hover {
+    background-color: gray;
+    /* Màu nền khi hover */
+    color: white;
+}
+
+.timeline-breaker:hover::before {
+    width: 100px;
+    /* Độ dài của đường line khi hover */
+}
+
+.img-thumbnail {
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(10px 7px 10px orange);
+}
+
+body {
+    margin-top: 200px;
+}

@@ -1,0 +1,44 @@
+/*body {*/
+/*    margin-top: 140px;*/
+/*}*/
+
+#blinking-text {
+    font-size: 25px;
+    color: blue;
+    /* Màu chữ ban đầu */
+    animation: blink 1s infinite, colorChange 2s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: blue;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: blue;
+    }
+}
